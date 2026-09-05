@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gabinet neurologopedyczny Moniki Bogdziewicz w Piastowie. Terapia neurologopedyczna, miofunkcjonalna oraz elektrostymulacja, konsultacja neurologopedyczna"
+    />
+    <title>
+      Monika Bogdziewicz – Neurologopeda, elektrostymulacja | Piastów
+    </title>
+    <link rel="canonical" href="https://neurologopedabogdziewicz.pl/">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=3" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon-32.png?v=3"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/favicon-192.png?v=3"
+    />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=3" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v=3" color="#c9a0a0" />
+    <style>
+      /* Local latin-ext Google fonts*/
+      @font-face {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('lora-regular.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Lora';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url('lora-semibold.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Lora';
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+        src: url('lora-italic.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: url('nunito-light.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url('nunito-regular.woff2') format('woff2');
+      }
+      @font-face {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url('nunito-semibold.woff2') format('woff2');
+      }
+      :root {
+        --rose: #f4d6d6;
+        --peach: #fde8d8;
+        --mint: #d6ede8;
+        --lavender: #e8dff5;
+        --cream: #fdf8f3;
+        --accent-text: #9c5f5f;
+        --text: #4a4040;
+        --muted: #6b5a5a;
+        --accent: #c9a0a0;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Nunito", sans-serif;
+        background: var(--cream);
+        color: var(--text);
+        line-height: 1.7;
+      }
+      /* NAV */
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: rgba(253, 248, 243, 0.92);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--rose);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.6rem 2.5rem;
+      }
+      .nav-logo {
+        font-family: "Lora", serif;
+        font-size: 1.1rem;
+        color: var(--accent-text);
+        letter-spacing: 0.03em;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+      .nav-logo img {
+        height: 155px;
+        width: 155px;
+        display: block;
+      }
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+      .nav-links a {
+        text-decoration: none;
+        color: var(--muted);
+        font-size: 1.15rem;
+        font-weight: 600;
+        transition: color 0.2s;
+      }
+      .nav-links a:hover {
+        color: var(--accent);
+      }
+
+      /* HERO */
+      .hero {
+        min-height: 92vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(
+          135deg,
+          var(--rose) 0%,
+          var(--peach) 50%,
+          var(--lavender) 100%
+        );
+        padding: 4rem 2rem;
+        text-align: center;
+      }
+      .hero-inner {
+        max-width: 700px;
+      }
+      .hero-avatar {
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #fff;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        margin-bottom: 1.8rem;
+      }
+      .hero h1 {
+        font-family: "Lora", serif;
+        font-size: 2.6rem;
+        color: var(--text);
+        margin-bottom: 0.4rem;
+      }
+      .hero .subtitle {
+        font-size: 1rem;
+        color: var(--muted);
+        margin-bottom: 1.6rem;
+        font-style: italic;
+      }
+      .hero p {
+        font-size: 1.05rem;
+        color: var(--text);
+        max-width: 560px;
+        margin: 0 auto 2rem;
+      }
+      .hero-quote {
+        font-family: "Lora", serif;
+        font-style: italic;
+        font-weight: 400;
+        color: var(--accent-text);
+      }
+      .hero-quote strong {
+        font-weight: 700;
+      }
+      .btn {
+        display: inline-block;
+        background: var(--accent);
+        color: #fff;
+        padding: 0.75rem 2.2rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition:
+          background 0.2s,
+          transform 0.2s;
+        box-shadow: 0 4px 15px rgba(201, 160, 160, 0.4);
+      }
+      .btn:hover {
+        background: #b88a8a;
+        transform: translateY(-2px);
+      }
+
+      .booking-button {
+        position: fixed;
+        right: 1.5rem;
+        bottom: 1.5rem;
+        z-index: 200;
+        background: rgba(201, 160, 160, 0.85);
+      }
+      .booking-button:hover {
+        background: rgba(184, 138, 138, 0.85);
+      }
+
+      /* SECTIONS */
+      section {
+        padding: 5rem 2rem;
+      }
+      .section-inner {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      .section-title {
+        font-family: "Lora", serif;
+        font-size: 2rem;
+        color: var(--text);
+        margin-bottom: 0.5rem;
+      }
+      .section-line {
+        width: 50px;
+        height: 3px;
+        background: var(--accent);
+        border-radius: 2px;
+        margin-bottom: 2.5rem;
+      }
+
+      /* USŁUGI */
+      #uslugi {
+        background: #fff;
+      }
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+      .service-card {
+        background: var(--cream);
+        border-radius: 16px;
+        padding: 2rem 1.8rem;
+        border: 1px solid var(--rose);
+        transition:
+          transform 0.2s,
+          box-shadow 0.2s;
+      }
+      .service-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+      }
+      .service-icon {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+      }
+      .service-card h3 {
+        font-family: "Lora", serif;
+        font-size: 1.15rem;
+        margin-bottom: 0.6rem;
+        color: var(--text);
+      }
+      .service-card p {
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+
+      /* O MNIE */
+      #o-mnie {
+        background: var(--mint);
+      }
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 3rem;
+        align-items: center;
+      }
+      .about-photo {
+        width: 400px;
+        height: 530px;
+        border-radius: 20px;
+        object-fit: cover;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      }
+      .about-text p {
+        margin-bottom: 1rem;
+        font-size: 0.97rem;
+      }
+      .about-text ul {
+        list-style: none;
+        margin-top: 1rem;
+      }
+      .about-text ul li {
+        padding: 0.3rem 0;
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+      .about-text ul li::before {
+        content: "✦ ";
+        color: var(--accent);
+      }
+
+      /* KONTAKT */
+      #kontakt {
+        background: var(--lavender);
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+      .contact-card {
+        background: #fff;
+        border-radius: 16px;
+        padding: 1.8rem;
+        text-align: center;
+        border: 1px solid rgba(201, 160, 160, 0.3);
+      }
+      .contact-card .icon {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+      }
+      .contact-card h3 {
+        font-family: "Lora", serif;
+        margin-bottom: 0.4rem;
+        font-size: 1rem;
+      }
+      .contact-card p,
+      .contact-card a {
+        font-size: 0.9rem;
+        color: var(--muted);
+        text-decoration: none;
+      }
+      .contact-card a:hover {
+        color: var(--accent);
+      }
+
+      .contact-card-link {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        transition:
+          background-color 0.2s ease,
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .contact-card-link:hover,
+      .contact-card-link:focus-visible {
+        background: var(--rose);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+      }
+      .contact-card-link:hover h3,
+      .contact-card-link:focus-visible h3 {
+        color: var(--accent-text);
+      }
+      .contact-card-link:focus-visible {
+        outline: 3px solid var(--accent-text);
+        outline-offset: 3px;
+      }
+
+      /* FOOTER */
+      footer {
+        background: var(--rose);
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 640px) {
+        .hero h1 {
+          font-size: 1.9rem;
+        }
+        .about-grid {
+          grid-template-columns: 1fr;
+        }
+        .nav-links {
+          gap: 1rem;
+        }
+        .nav-links a {
+          font-size: 0.95rem;
+        }
+        nav {
+          padding: 0.5rem 1.2rem;
+        }
+        .nav-logo img {
+          width: 135px;
+          height: 135px;
+        }
+        .about-photo {
+          width: 280px;
+          height: 371px;
+        }
+        .hero-avatar {
+          width: 120px;
+          height: 120px;
+        }
+        .services-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Gabinet Neurologopedyczny mgr Monika Bogdziewicz",
+        "url": "https://neurolopedabogdziewicz.pl/",
+        "telephone": "+48509275248",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ul. Skorupki 16a",
+          "addressLocality": "Piastów",
+          "postalCode": "05-820",
+          "addressCountry": "PL",
+          "image": "https://neurolopedabogdziewicz.pl/logo.png",
+          "openingHours": "Mo 09:00-16:00",
+          "priceRange": "170-500 PLN",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Cennik usług",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Konsultacja neurologopedyczna" },
+                "price": "250",
+                "priceCurrency": "PLN"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Terapia indywidualna" },
+                "price": "170",
+                "priceCurrency": "PLN"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Terapia miofunkcjonalna" },
+                "price": "170",
+                "priceCurrency": "PLN"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Terapia miofunkcjonalna z Elektrostymulacją" },
+                "price": "190",
+                "priceCurrency": "PLN"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Elektrostymulacja - pakiet 10 zabiegów" },
+                "price": "500",
+                "priceCurrency": "PLN"
+              }
+            ]
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <picture>
+          <source srcset="logo.webp" type="image/webp" />
+          <img
+            src="logo.webp"
+            alt="Gabinet Neurologopedyczny Moniki Bogdziewicz"
+            width="85"
+            height="85"
+          />
+        </picture>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#uslugi">Usługi</a></li>
+        <li><a href="#o-mnie">O mnie</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-inner">
+        <picture>
+          <source srcset="main.avif" type="image/avif" />
+          <img
+            src="main.jpg"
+            alt="mgr Monika Bogdziewicz – neurologopeda, elektrostymulacja"
+            class="hero-avatar"
+            width="600"
+            height="600"
+            loading="eager"
+          />
+          <h1>mgr Monika Bogdziewicz</h1>
+          <p class="subtitle">
+            Neurologopeda · Terapeuta Integracji Sensorycznej · Trener TUS
+          </p>
+          <p class="hero-quote">
+            <strong
+              >„Wszyscy dorośli kiedyś byli dziećmi, ale niewielu z nich pamięta
+              o tym”</strong
+            >
+            — „Mały Książę”, Antoine de Saint-Exupéry
+          </p>
+        </div>
+      </section>
+
+      <!-- USŁUGI -->
+      <section id="uslugi">
+        <div class="section-inner">
+          <h2 class="section-title">Usługi</h2>
+          <div class="section-line"></div>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">👶</div>
+              <h3>Konsultacje niemowląt i dzieci</h3>
+              <p>
+                Ocena odruchów, karmienia i wczesnego rozwoju mowy u
+                najmłodszych pacjentów. Wsparcie i wskazówki dla rodziców od
+                pierwszych tygodni życia dziecka.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">🧠</div>
+              <h3>Terapia neurologopedyczna</h3>
+              <p>
+                Diagnoza i terapia zaburzeń mowy oraz komunikacji wynikających z
+                uszkodzeń lub dysfunkcji układu nerwowego.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">👄</div>
+              <h3>Terapia miofunkcjonalna</h3>
+              <p>
+                Usprawnianie napięcia i pracy mięśni twarzy, języka i warg.
+                Korekcja nieprawidłowych nawyków oddychania i połykania
+                wpływających na wymowę oraz zgryz.
+              </p>
+            </div>
+
+            <div class="service-card">
+              <div class="service-icon">⚡</div>
+              <h3>Elektrostymulacja logopedyczna</h3>
+              <p>
+                Terapia z użyciem prądów niskiej częstotliwości wspomagająca
+                pracę mięśni artykulacyjnych. Skuteczne wsparcie przy
+                niedowładach i obniżonym napięciu mięśniowym.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- O MNIE -->
+      <section id="o-mnie">
+        <div class="section-inner">
+          <h2 class="section-title">O mnie</h2>
+          <div class="section-line"></div>
+          <div class="about-grid">
+            <picture>
+              <source srcset="o-mnie.avif" type="image/avif" />
+              <img
+                src="o-mnie.jpg"
+                alt="mgr Monika Bogdziewicz – neurologopeda, elektrostymulacja"
+                class="about-photo"
+                loading="lazy"
+              />
+            </picture>
+            <div class="about-text">
+              <p>
+                Jestem neurologopedą, terapeutą integracji sensorycznej oraz trenerem
+                TUS. Od 2015 roku jestem związana z Centrum RiM, gdzie prowadzę
+                terapię indywidualną oraz TUS.
+              </p>
+
+              <p>
+                Ukończyłam Uniwersytet Warmińsko-Mazurski na kierunku filologia polska,
+                gdzie zdobyłam tytuł magistra. Już podczas studiów licencjackich miałam
+                przyjemność sprawdzać swoje umiejętności w indywidualnej pracy z małym
+                pacjentem, ponieważ wybrany przeze mnie kierunek oferował specjalność
+                z zakresu logopedii nauczycielskiej z glottodydaktyką.
+              </p>
+
+              <p>
+                Moje kolejne wybory zawodowe były już dość mocno sprecyzowane.
+                Wiedziałam, co chcę w życiu robić, dlatego ukończyłam studia podyplomowe
+                z logopedii ogólnej oraz neurologopedii ze specjalizacją we wczesnej
+                interwencji neurologopedycznej.
+              </p>
+
+              <p>
+                Uwielbiam pracę z małymi pacjentami, a także z tymi większymi, dlatego
+                postanowiłam połączyć przyjemne z pożytecznym i ukończyłam kursy
+                integracji sensorycznej I i II stopnia. Dało mi to możliwość spojrzenia
+                na małego człowieka całościowo. Od 2018 r. jestem także trenerem TUS.
+                Ukończyłam wiele szkoleń z zakresu wspierania dzieci z ASD.
+                Z wielką przyjemnością goszczę w gabinecie najmłodszych pacjentów –
+                noworodki i niemowlęta, a także ich rodziców, którym staram się pomagać
+                przy pierwszych trudnościach związanych z karmieniem i oceną odruchów
+                niemowlęcych.
+              </p>
+
+              <p>
+                Stawiam na rozwój i obserwację. Uważam, że każdy człowiek jest inny
+                i niesie ze sobą własną historię, a każde dziecko jest wyjątkowe,
+                wartościowe i jedyne w swojej doskonałości. W pracy wykorzystuję
+                techniki terapii miofunkcjonalnej oraz elektrostymulację, a przede
+                wszystkim stawiam na dobrą zabawę i bezpieczeństwo.
+              </p>
+
+              <p>
+                Prywatnie jestem żoną i mamą dwójki cudownych dzieci. To właśnie oni
+                wspierają mnie i wierzą w moje pomysły.
+              </p>
+
+              <p>Dziękuję Wam: A.D.I.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- KONTAKT -->
+      <section id="kontakt">
+        <div class="section-inner">
+          <h2 class="section-title">Kontakt</h2>
+          <div class="section-line"></div>
+          <p style="color: var(--muted); margin-bottom: 1.5rem">
+            Zapraszam do kontaktu telefonicznego lub mailowego. Wizyty odbywają
+            się po wcześniejszym umówieniu.
+          </p>
+          <div class="contact-grid">
+            <a
+              class="contact-card contact-card-link"
+              href="tel:+48509275248"
+              aria-label="Zadzwoń pod numer +48 509 275 248"
+            >
+              <div class="icon">📞</div>
+              <h3>Telefon</h3>
+              <p>+48 509 275 248</p>
+              <p style="margin-top: 0.4rem; font-size: 0.8rem">
+                Pon–Pt, 8:00–18:00
+              </p>
+            </a>
+
+            <a
+              class="contact-card contact-card-link"
+              href="mailto:neurologopeda.bogdziewicz@gmail.com"
+              aria-label="Wyślij e-mail na adres neurologopeda.bogdziewicz@gmail.com"
+            >
+              <div class="icon">✉️</div>
+              <h3>E-mail</h3>
+              <p>neurologopeda.bogdziewicz@gmail.com</p>
+            </a>
+
+            <a
+              class="contact-card contact-card-link"
+              href="https://www.google.com/maps/search/?api=1&query=Punkt+Szczepie%C5%84+Powszechnych+ul.+Skorupki+16a+05-820+Piast%C3%B3w"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Otwórz lokalizację gabinetu w Google Maps"
+            >
+              <div class="icon">📍</div>
+              <h3>Lokalizacja</h3>
+              <p>ul. Skorupki 16a<br />05-820 Piastów</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      © 2026 Monika Bogdziewicz – Gabinet Neurologopedyczny · Wszelkie prawa
+      zastrzeżone
+    </footer>
+    <!-- Rezerwacja -->
+    <a
+      class="btn booking-button"
+      href="https://cal.com/mbogdziewicz"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Umów wizytę
+    </a>
+    <!-- Rezerwacja end -->
+  </body>
+</html>
